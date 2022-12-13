@@ -32,12 +32,17 @@ export function Sidebar() {
             </span>
 
             <div className="flex flex-col gap-8">
-                <Lesson
-                    title='Aula 01'
-                    slug='aula-01'
-                    availableAt={new Date()}
-                    type='class'
-                />
+                {data?.lessons.map(lesson => {
+                    return (
+                        <Lesson
+                            key={lesson.id}
+                            title= {lesson.title}
+                            slug= {lesson.slug}
+                            availableAt={new Date(lesson.availableAt)}
+                            type= {lesson.lessonType}
+                    />
+                    )
+                })}
 
             </div>
         </aside>
