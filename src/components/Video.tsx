@@ -1,4 +1,4 @@
-import { DiscordLogo, Lightning } from "phosphor-react"
+import { CaretRight, DiscordLogo, FileArrowDown, Lightning } from "phosphor-react"
 
 export function Video() {
     return (
@@ -12,9 +12,21 @@ export function Video() {
                         <h1 className="text-2xl font-bold ">
                             Aula 01 - Abertura do ignite lab
                         </h1>
-                        <p className="mt-4 text-gray-200">
-                            Nessa aula vamos dar início ao projeto criando a estrutura base da aplicação utilizando ReactJS
+                        <p className="mt-4 text-gray-200 leading-relaxed">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laborum corrupti necessitatibus, in, excepturi sed cum dolores quas at, consectetur cupiditate nostrum? Reprehenderit quas consequatur distinctio eligendi alias beatae pariatur?
                         </p>
+
+                        <div className="flex items-center gap-4 mt-6">
+                            <img 
+                            className="h-16 w-16 rounded-full border-2 border-blue-500"
+                            src="https://avatars.githubusercontent.com/u/97069636?v=4" 
+                            alt="" />
+
+                            <div className="leading-relaxed">
+                                <strong className="font-bold text-2xl block"> Rian Lucas</strong>
+                                <span className="text-gray-200 text-sm block">Criador desse site</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div className="flex flex-col gap-4">
@@ -29,8 +41,41 @@ export function Video() {
                         </a>
                     </div>
                 </div>
-                <div>
 
+                <div className="gap-8 mt-20 grid grid-cols-2">
+                    <a href="#" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
+                        <div className="bg-green-700 h-full p-6 flex items-center">
+                            <FileArrowDown size={40}/>
+                        </div>
+                        <div className="py-6 leading-relaxed">
+                            <strong className="text-2xl">
+                                Material complementar
+                            </strong>
+                            <p className="text-sm text-gray-200 mt-2">
+                                Acesse o material complementar para acelerar o seu desenvolvimento
+                            </p>
+                        </div>
+                        <div className="h-full p-6 flex items-center ">
+                            <CaretRight size={24}/>
+                        </div>
+                    </a>
+
+                    <a href="#" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
+                        <div className="bg-green-700 h-full p-6 flex items-center">
+                            <FileArrowDown size={40}/>
+                        </div>
+                        <div className="py-6 leading-relaxed">
+                            <strong className="text-2xl">
+                                Wallpapers Exclusivos
+                            </strong>
+                            <p className="text-sm text-gray-200 mt-2">
+                                Baixe nossos wallpapers para estilizar o seu computador ou celular
+                            </p>
+                        </div>
+                        <div className="h-full p-6 flex items-center ">
+                            <CaretRight size={24}/>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
